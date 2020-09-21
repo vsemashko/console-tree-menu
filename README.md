@@ -17,34 +17,44 @@ books_professional_it_2020_overview
 - результат должен быть отсортирован в алфавитном порядке, при этом если на одном уровне находятся и файлы и папки, то файлы должны быть отображены перед папками
 
 Пример ожидаемого результата:
-1. input:
+1. input: 
+```
 [
 "electronics_accessoires_overview"
 ]
+```
 
-outut:
+output:
+```
 /electronics
 	/accessoires
 		overview
-
+```
 2. input:
+```
 [
 "overview"
 ]
+```
 
 output:
+```
 overview
+```
 
 2. input:
+```
 [
 "electronics_accessoires_overview",
 "books_detectives",
 "books_professional_it_2020_overview"
 ]
+```
 
 output:
+```
 /books
-	detectives
+    detectives
 	/professional
 		/it
 			/2020
@@ -52,3 +62,5 @@ output:
 /electronics
 	/accessoires
 		overview
+
+```
