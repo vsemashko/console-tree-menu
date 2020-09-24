@@ -1,5 +1,7 @@
 # Code assessment task
 
+[![Run on Repl.it](https://repl.it/badge/github/vsemashko/console-tree-menu)](https://repl.it/github/vsemashko/console-tree-menu)
+
 Есть имя файла, представленное в виде строки, разделенное нижними подчеркиваниями. 
 Примеры имен:
 overview
