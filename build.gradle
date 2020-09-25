@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+ext {
+    mockitoVersion = "2.23.4"
+    junitJupiterVersion = "5.3.2"
+    guavaVersion = "15.0"
+    apacheCommonsVersion = "3.10"
+}
+
+group 'com.workfusion'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.google.guava:guava:$guavaVersion"
+    compile "org.apache.commons:commons-lang3:$apacheCommonsVersion"
+
+    testCompile "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion"
+    testCompile "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion"
+    testCompile "org.junit.jupiter:junit-jupiter-params:$junitJupiterVersion"
+    testCompile "org.mockito:mockito-junit-jupiter:$mockitoVersion"
+}
+
+test {
+    useJUnitPlatform()
+}
