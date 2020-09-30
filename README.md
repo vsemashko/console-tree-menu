@@ -56,7 +56,7 @@ overview
 output:
 ```
 /books
-    detectives
+	detectives
 	/professional
 		/it
 			/2020
